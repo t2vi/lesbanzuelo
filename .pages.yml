@@ -54,6 +54,9 @@ content:
       - name: body
         label: Body
         type: rich-text
+      - name: link
+        label: Link
+        type: string
   - name: music
     label: Music
     path: src/data/music

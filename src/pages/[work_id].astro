@@ -1,14 +1,13 @@
 ---
+import { getCollection } from "astro:content";
 import Layout from '@layouts/Layout.astro';
 import { render } from "astro:content";
 import MemberGrid from '@components/MemberGrid.astro'
 import {Button} from "@heroui/react";
-import {getWorks} from '@lib/getWorks.ts';
-
-const works = await getWorks()
+const works = await getCollection("works");
 
 export const getStaticPaths = async () => {
-  const works = await getWorks()
+  const works = await await getCollection("works");
   const paths = works.map((work) => {
     return {
       params: { work_id: work.id },

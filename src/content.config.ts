@@ -1,5 +1,5 @@
 import { defineCollection, reference, z } from 'astro:content';
-import { glob, file } from 'astro/loaders';
+import { glob } from 'astro/loaders';
 
 const works = defineCollection({
   loader: glob({ pattern: '**/*.md', base: "./src/data/works" }),
@@ -15,10 +15,10 @@ const pages = defineCollection({
   }),
 });
 
-const imageInfo = defineCollection({
-  loader: file("src/data/imageInfo.json"),
-});
+// const imageInfo = defineCollection({
+//   loader: file("src/data/imageInfo.json"),
+// });
  
 // Export all collections
-export const collections = {works, pages, imageInfo};
+export const collections = {works, pages}; //, imageInfo};
 

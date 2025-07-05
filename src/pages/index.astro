@@ -1,6 +1,6 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import MemberGrid from '@components/AllImageGrid.tsx'
+// import MemberGrid from '@components/AllImageGrid.tsx'
 import { getCollection } from "astro:content";
 
 const imageInfo = await getCollection('imageInfo');
@@ -12,5 +12,6 @@ const members = imageInfo.reduce((ans, item) => {
 }, []).sort(() => Math.random() - 0.5);
 ---
 <Layout>
-  <MemberGrid members={members} client:load />
+  Test
+  <!-- <MemberGrid members={members} client:load /> -->
 </Layout>

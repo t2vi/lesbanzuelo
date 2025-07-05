@@ -1,1 +1,44 @@
-{"/images/works":{"alien-digital-print":[1400,1826],"dilang-anghel":[933,1400],"mike-myers-speed-painting":[1410,1085],"light-web-banner":[1200,800],"epiko":[933,1400],"headphones-webbanner":[1200,800],"voices-in-the-theater":[1400,1867],"timelight-panorama":[1080,1080],"ph-spec-fiction-05":[1200,1600],"timelight-panorama-taken-away":[2550,3300]}}
+{
+    "/images/works": {
+        "alien-digital-print": [
+            1400,
+            1826
+        ],
+        "dilang-anghel": [
+            933,
+            1400
+        ],
+        "mike-myers-speed-painting": [
+            1410,
+            1085
+        ],
+        "headphones-webbanner": [
+            1200,
+            800
+        ],
+        "light-web-banner": [
+            1200,
+            800
+        ],
+        "epiko": [
+            933,
+            1400
+        ],
+        "voices-in-the-theater": [
+            1400,
+            1867
+        ],
+        "ph-spec-fiction-05": [
+            1200,
+            1600
+        ],
+        "timelight-panorama": [
+            1080,
+            1080
+        ],
+        "timelight-panorama-taken-away": [
+            2550,
+            3300
+        ]
+    }
+}

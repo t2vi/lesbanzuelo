@@ -37,7 +37,7 @@ content:
     type: collection
     filename: '{fields.title}.md'
     view:
-      fields: [heroImage, title, pubDate]
+      fields: [title, pubDate]
     fields:
       - name: published
         label: Is Published
@@ -56,6 +56,32 @@ content:
         type: rich-text
       - name: link
         label: Link
+        type: string
+  - name: music
+    label: Music
+    path: src/data/music
+    type: collection
+    filename: '{fields.title}.md'
+    view:
+      fields: [title, pubDate]
+    fields:
+      - name: published
+        label: Is Published
+        type: boolean
+        default: true
+      - name: pubDate
+        label: Publication Date
+        type: date
+        options:
+          format: MMM dd yyyy
+      - name: title
+        label: Title
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
+      - name: embedCode
+        label: Embed Code
         type: string
   - name: pages
     label: Pages

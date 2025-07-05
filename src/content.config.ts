@@ -16,8 +16,12 @@ const pages = defineCollection({
 });
 
 const imageInfo = defineCollection({
-  loader: file("src/data/imageInfo.json"),
+  loader: glob({ pattern: '**/*.webp', base: "./src/data/attachments" })
 });
+
+// const imageInfo = defineCollection({
+//   loader: file("src/data/imageInfo.json"),
+// });
  
 // Export all collections
 export const collections = {works, pages, imageInfo};

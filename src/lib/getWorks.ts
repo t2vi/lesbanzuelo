@@ -6,16 +6,16 @@ export const getWorks = async () => {
   const works = imageInfo.reduce((ans, item) => {
     const work = worksData.find(it => it.data.base === item.id);
     if (!work) {
-		  throw new Error(`Error: ${item.id} not found in works collection`);
+      throw new Error(`Error: ${item.id} not found in works collection`);
     }
     return [
       ...ans,
       {
-    	  ...work,
-    	  data: {
-    	    ...work.data,
-    	    members: item.data,
-    	  },
+        ...work,
+        data: {
+          ...work.data,
+          members: item.data,
+        },
       }
     ];
   }, []);

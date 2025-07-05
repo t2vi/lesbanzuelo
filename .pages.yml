@@ -86,8 +86,8 @@ content:
       - name: heroImage
         label: Hero Image
         type: image
-      - name: url
-        label: URL
+      - name: embed-code
+        label: Embed Code
         type: string
       - name: type
         label: Type

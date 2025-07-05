@@ -11,7 +11,7 @@ const publicPath = path.resolve('./public');
 const sizeInfoDir = path.resolve('./src/data/imageInfo.json');
 const worksPageDir = path.resolve('./src/data/works');
 const saveDir = path.resolve('./public/images/works');
-const targetDirBase = path.resolve('./src/data/attachments');
+const targetDirBase = path.resolve('./source-image');
 const watermark = ''
 const targetDirSub = '';
 const targetDir = path.join(targetDirBase, targetDirSub);
@@ -71,7 +71,7 @@ function getAllImageFiles(dir) {
     const stat = fs.statSync(filePath);
     if (stat && stat.isDirectory()) {
       results = results.concat(getAllImageFiles(filePath));
-    } else if (/\.(jpe?g|png|webp)$/i.test(filePath)) {
+    } else if (/\.(jpe?g|png)$/i.test(filePath)) {
       results.push(filePath);
     } else {
       // console.error(`🟡${filePath} not jpg/png`);

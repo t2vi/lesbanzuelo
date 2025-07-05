@@ -10,7 +10,7 @@ import {
   Link,
   Button,
 } from "@heroui/react";
-import ThemeSwitcher from './ThemeSwitcher.tsx';
+import ThemeSwitcher from './ThemeSwitcher.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ScrambleText from '@components/ScrambleText.tsx';
 import Logo from '@icons/logo.svg?react';

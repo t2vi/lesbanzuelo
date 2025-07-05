@@ -4,7 +4,7 @@ import { glob, file } from 'astro/loaders';
 const works = defineCollection({
   loader: glob({ pattern: '**/*.md', base: "./src/data/works" }),
   schema: z.object({
-    title: z.string(),
+    base: z.string(),
   }),
 });
 
@@ -16,12 +16,8 @@ const pages = defineCollection({
 });
 
 const imageInfo = defineCollection({
-  loader: glob({ pattern: '**/*.webp', base: "./src/data/attachments" })
+  loader: file("src/data/imageInfo.json"),
 });
-
-// const imageInfo = defineCollection({
-//   loader: file("src/data/imageInfo.json"),
-// });
  
 // Export all collections
 export const collections = {works, pages, imageInfo};

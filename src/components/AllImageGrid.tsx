@@ -10,7 +10,7 @@ import {
   Button,
   useDisclosure,
 } from "@heroui/react";
-import Image from './Image.tsx';
+import Image from './Image.js';
 
 export default function App({ members }) {
   const {isOpen, onOpen, onOpenChange} = useDisclosure();

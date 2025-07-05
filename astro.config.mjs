@@ -9,21 +9,15 @@ import svgr from 'vite-plugin-svgr';
 
 import sitemap from '@astrojs/sitemap';
 
-import netlify from '@astrojs/netlify';
-
 // https://astro.build/config
 export default defineConfig({
   site: 'https://rabbitit.fun',
-
   devToolbar: {
     enabled: false
   },
-
   integrations: [sitemap(), react()],
 
   vite: {
     plugins: [svgr(), tailwindcss()]
-  },
-
-  adapter: netlify()
+  }
 });

@@ -1,7 +1,7 @@
 ---
 published: true
-title: Plastic plants web banner
-heroImage: /data/attachments/plastic-plants-web-banner.webp
+title: Lights web banner
+heroImage: /data/attachments/light-web-banner.webp
 attachments:
-  - /data/attachments/plastic-plants-web-banner.webp
+  - /data/attachments/light-web-banner.webp
 ---

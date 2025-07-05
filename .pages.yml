@@ -97,6 +97,6 @@ content:
 media:
   - name: files
     label: Files
-    input: src/data/attachments
-    output: /data/attachments
+    input: source-image
+    output: source-image
     categories: [ png, webp ]

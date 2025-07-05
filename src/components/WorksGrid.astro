@@ -14,7 +14,7 @@ const { works } = Astro.props;
     href={`/${work.id}`}
     class="block overflow-hidden mb-1 shadow-xl relative"
   >
-    <img src={work.data.heroImage} />
+    <img src={`/${work.data.heroImage}`} class="transition duration-300 ease-in-out hover:scale-108" />
     {/* {work.data.title}
     {work.data.body}
     {work.data.heroImage}
@@ -29,15 +29,15 @@ const { works } = Astro.props;
         img: "transition duration-300 ease-in-out hover:scale-108",
       }}
     />  */}
-    {/*
+    
     <span class="
       text-sm md:text-base text-white
       block absolute overflow-hidden
       py-1 bottom-0 px-2 z-10 w-full
       bg-black/40 backdrop-blur truncate
     ">
-      {work.data || work.id}
+      { work.data.title }
     </span>
-    */}
+   
   </a>)}
 </div>

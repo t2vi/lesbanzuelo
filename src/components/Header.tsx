@@ -20,7 +20,7 @@ export default function App({ pathname, children }) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const links = [{
-    label: 'All',
+    label: 'Home',
     href: '/'
   }, {
     label: 'Works',
@@ -30,7 +30,7 @@ export default function App({ pathname, children }) {
     href: '/about/'
   }, {
     label: 'Contact',
-    href: 'mailto:chinaitlearner@gmail.com'
+    href: 'mailto:lesbanzuelo@gmail.com'
   }]
   return (
     <Navbar
@@ -70,14 +70,14 @@ export default function App({ pathname, children }) {
           <Logo className="w-8 h-8 sm:w-12"/>
           &nbsp;
           <Link href='/'>
-            Designer
+            Les Banzuelo
           </Link>
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent className="pr-3 hidden sm:flex" justify="start">
         <NavbarBrand className="sm:text-2xl sm:pr-8 text-xl">
           <Link href='/'>
-            Designer
+            Les Banzuelo
           </Link>
         </NavbarBrand>
       </NavbarContent>

@@ -22,8 +22,8 @@ content:
       - name: body
         label: Body
         type: rich-text
-      - name: heroImage
-        label: Hero Image
+      - name: attachments
+        label: Attachments
         type: image
         options:
           multiple:

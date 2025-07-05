@@ -14,7 +14,7 @@ const { works } = Astro.props;
     href={`/${work.id}`}
     class="block overflow-hidden mb-1 shadow-xl relative"
   >
-    <img src={`${work.data.heroImage.replace("src/data", "")}`} class="transition duration-300 ease-in-out hover:scale-108" />
+    <img src={`${work.data.heroImage.replace("public", "")}`} class="transition duration-300 ease-in-out hover:scale-108" />
     <span class="
       text-sm md:text-base text-white
       block absolute overflow-hidden

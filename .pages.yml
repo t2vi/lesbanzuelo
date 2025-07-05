@@ -1,0 +1,84 @@
+content:
+  - name: works
+    label: Works
+    path: data/works
+    type: collection
+    filename: '{fields.title}.md'
+    view:
+      fields: [heroImage, title, pubDate]
+    fields:
+      - name: published
+        label: Is Published
+        type: boolean
+        default: true
+      - name: pubDate
+        label: Publication Date
+        type: date
+        options:
+          format: MMM dd yyyy
+      - name: title
+        label: Title
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
+      - name: heroImage
+        label: Hero Image
+        options:
+          multiple:
+            max: 10
+  - name: videos
+    label: Videos
+    path: data/videos
+    type: collection
+    filename: '{fields.title}.md'
+    view:
+      fields: [heroImage, title, pubDate]
+    fields:
+      - name: published
+        label: Is Published
+        type: boolean
+        default: true
+      - name: pubDate
+        label: Publication Date
+        type: date
+        options:
+          format: MMM dd yyyy
+      - name: title
+        label: Title
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
+  - name: music
+    label: Music
+    path: data/music
+    type: collection
+    filename: '{fields.title}.md'
+    view:
+      fields: [heroImage, title, pubDate]
+    fields:
+      - name: published
+        label: Is Published
+        type: boolean
+        default: true
+      - name: pubDate
+        label: Publication Date
+        type: date
+        options:
+          format: MMM dd yyyy
+      - name: title
+        label: Title
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
+      - name: heroImage
+        label: Hero Image
+        type: image
+media:
+  - name: files
+    label: Files
+    input: data/attachments
+    output: /data/attachments
+    categories: [ png, webp ]

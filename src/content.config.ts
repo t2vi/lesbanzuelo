@@ -14,7 +14,7 @@ const works = defineCollection({
 const pages = defineCollection({
   loader: glob({ pattern: '**/*.md', base: "./src/data/pages" }),
   schema: z.object({
-    name: z.string(),
+    title: z.string(),
   }),
 });
 

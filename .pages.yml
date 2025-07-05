@@ -24,6 +24,7 @@ content:
         type: rich-text
       - name: heroImage
         label: Hero Image
+        type: image
         options:
           multiple:
             max: 10

@@ -83,6 +83,10 @@ content:
       - name: heroImage
         label: Hero Image
         type: image
+      - name: type
+        label: Type
+        options:
+          values: [ spotify, apple, soundcloud ]
 media:
   - name: files
     label: Files

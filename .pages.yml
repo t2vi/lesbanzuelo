@@ -22,9 +22,9 @@ content:
       - name: body
         label: Body
         type: rich-text
-      - name: heroImage
+      - name: base
         label: Hero Image
-        type: image
+        type: string
       - name: attachments
         label: Attachments
         type: image

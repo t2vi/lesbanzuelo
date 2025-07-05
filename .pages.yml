@@ -77,6 +77,9 @@ content:
       - name: title
         label: Title
         type: string
+      - name: artist
+        label: Artist
+        type: string
       - name: body
         label: Body
         type: rich-text

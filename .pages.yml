@@ -54,8 +54,8 @@ content:
       - name: body
         label: Body
         type: rich-text
-      - name: link
-        label: Link
+      - name: embedCode
+        label: Embed Code
         type: string
   - name: music
     label: Music
@@ -106,38 +106,6 @@ content:
       - name: body
         label: Body
         type: rich-text
-  - name: works
-    label: Works
-    path: src/data/works
-    type: collection
-    filename: '{fields.title}.md'
-    view:
-      fields: [heroImage, title, pubDate]
-    fields:
-      - name: published
-        label: Is Published
-        type: boolean
-        default: true
-      - name: pubDate
-        label: Publication Date
-        type: date
-        options:
-          format: MMM dd yyyy
-      - name: title
-        label: Title
-        type: string
-      - name: body
-        label: Body
-        type: rich-text
-      - name: heroImage
-        label: Hero Image
-        type: image
-      - name: attachments
-        label: Attachments
-        type: image
-        options:
-          multiple:
-            max: 10
 media:
   - name: files
     label: Files

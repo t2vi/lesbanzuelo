@@ -86,6 +86,9 @@ content:
       - name: heroImage
         label: Hero Image
         type: image
+      - name: url
+        label: URL
+        type: string
       - name: type
         label: Type
         type: select

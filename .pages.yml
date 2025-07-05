@@ -97,6 +97,6 @@ content:
 media:
   - name: files
     label: Files
-    input: source-image
-    output: source-image
-    categories: [ jpg ]
+    input: src/data/images
+    output: src/data/images
+    categories: [ jpg, webp, png ]

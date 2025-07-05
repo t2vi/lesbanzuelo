@@ -57,9 +57,9 @@ content:
       - name: link
         label: Link
         type: string
-  - name: music
-    label: Music
-    path: src/data/music
+  - name: pages
+    label: Pages
+    path: src/data/pages
     type: collection
     filename: '{fields.title}.md'
     view:
@@ -77,8 +77,28 @@ content:
       - name: title
         label: Title
         type: string
-      - name: artist
-        label: Artist
+      - name: body
+        label: Body
+        type: rich-text
+  - name: works
+    label: Works
+    path: src/data/works
+    type: collection
+    filename: '{fields.title}.md'
+    view:
+      fields: [heroImage, title, pubDate]
+    fields:
+      - name: published
+        label: Is Published
+        type: boolean
+        default: true
+      - name: pubDate
+        label: Publication Date
+        type: date
+        options:
+          format: MMM dd yyyy
+      - name: title
+        label: Title
         type: string
       - name: body
         label: Body
@@ -86,14 +106,12 @@ content:
       - name: heroImage
         label: Hero Image
         type: image
-      - name: embed-code
-        label: Embed Code
-        type: string
-      - name: type
-        label: Type
-        type: select
+      - name: attachments
+        label: Attachments
+        type: image
         options:
-          values: [ spotify, apple, soundcloud ]
+          multiple:
+            max: 10
 media:
   - name: files
     label: Files

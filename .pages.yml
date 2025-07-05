@@ -99,4 +99,4 @@ media:
     label: Files
     input: source-image
     output: source-image
-    categories: [ png, webp ]
+    categories: [ jpg ]

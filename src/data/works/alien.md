@@ -1,6 +1,6 @@
 ---
 published: true
-title: Alien
-base: /images/works/alien
+title: Alien digital print
+base: /images/works/alien-digital-print
 ---
 Test

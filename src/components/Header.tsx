@@ -10,10 +10,10 @@ import {
   Link,
   Button,
 } from "@heroui/react";
-import ThemeSwitcher from './ThemeSwitcher.js';
+// import ThemeSwitcher from './ThemeSwitcher.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ScrambleText from '@components/ScrambleText.tsx';
-import Logo from '@icons/logo.svg?react';
+// import Logo from '@icons/logo.svg?react';
 import Rabbitit from '@icons/rabbitit.svg?react';
 
 export default function App({ pathname, children }) {
@@ -67,7 +67,7 @@ export default function App({ pathname, children }) {
 
       <NavbarContent className="pr-3 sm:hidden" justify="center">
         <NavbarBrand className="sm:text-2xl sm:pr-8 text-xl">
-          <Logo className="w-8 h-8 sm:w-12"/>
+          {/* <Logo className="w-8 h-8 sm:w-12"/> */}
           &nbsp;
           <Link href='/'>
             Les Banzuelo
@@ -83,7 +83,7 @@ export default function App({ pathname, children }) {
       </NavbarContent>
       <NavbarContent className="pr-3 hidden sm:flex" justify="center">
         <NavbarBrand className="sm:text-2xl sm:pr-8 text-xl">
-          <Logo className="w-12 h-12 sm:w-12"/>
+          {/* <Logo className="w-12 h-12 sm:w-12"/> */}
         </NavbarBrand>
       </NavbarContent>
 

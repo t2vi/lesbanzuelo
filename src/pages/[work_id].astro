@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import Layout from '@layouts/Layout.astro';
 import { render } from "astro:content";
 import MemberGrid from '@components/MemberGrid.astro'
-import {Button} from "@heroui/react";
+import { Button } from "@heroui/react";
 const works = await getCollection("works");
 
 export const getStaticPaths = async () => {

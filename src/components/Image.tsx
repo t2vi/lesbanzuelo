@@ -6,7 +6,7 @@ export default React.memo(function({ src, alt, classNames = {}, onClick, imageIn
   const [isLoad, setIsLoad] = useState(false)
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
-  const radio = Math.round(imageInfo.width / imageInfo.height * 100) / 100;
+  const radio = Math.round(4/ 3 * 100) / 100;
   return (
     <Skeleton
       classNames={{

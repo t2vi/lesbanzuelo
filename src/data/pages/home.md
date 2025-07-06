@@ -6,7 +6,7 @@ Lester Banzuelo is a Filipino drummer, graphic artist, and multimedia profession
 
 <br />
 
-In the music scene, Banzuelo is best known as the drummer for Fuseboxx, a progressive metal band from Manila that gained recognition for its complex yet accessible sound. His dynamic drumming is prominently featured on the band’s albums, including _Fuseboxx_ (2006) and _Animated_ (2011), where his performances contribute to the band's intricate musical compositions.<br />
+In the music scene, Banzuelo is best known as the drummer for Fuseboxx, a progressive metal band from Manila that gained recognition for its complex yet accessible sound. His dynamic drumming is prominently featured on the band’s albums, including Fuseboxx (2006) and Animated (2011), where his performances contribute to the band's intricate musical compositions.<br />
 
 <br />
 

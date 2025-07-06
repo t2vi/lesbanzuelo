@@ -5,7 +5,7 @@ content:
     type: collection
     filename: '{fields.title}.md'
     view:
-      fields: [heroImage, title, pubDate]
+      fields: [heroImage, title, client]
     fields:
       - name: published
         label: Is Published

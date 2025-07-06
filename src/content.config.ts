@@ -11,22 +11,31 @@ const works = defineCollection({
   }),
 });
 
+const videos = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: "./src/data/videos" }),
+  schema: z.object({
+    title: z.string(),
+    embedCode: z.string(),
+    body: z.string().optional(),
+  }),
+});
+
+const music = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: "./src/data/music" }),
+  schema: z.object({
+    title: z.string(),
+    embedCode: z.string(),
+    body: z.string().optional(),
+  }),
+});
+
 const pages = defineCollection({
   loader: glob({ pattern: '**/*.md', base: "./src/data/pages" }),
   schema: z.object({
     title: z.string(),
+    
   }),
 });
-
-// const imageInfo = defineCollection({
-//   loader: file("src/data/imageInfo.json"),
-// });
  
 // Export all collections
-export const collections = {works, pages};
-
-// published: true
-// title: Alien digital print
-// heroImage: src/data/images/alien-digital-print.webp
-// attachments:
-//   - src/data/images/alien-digital-print.webp
+export const collections = {works, pages, videos, music};

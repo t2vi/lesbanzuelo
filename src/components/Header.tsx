@@ -19,13 +19,24 @@ import Rabbitit from '@icons/rabbitit.svg?react';
 export default function App({ pathname, children }) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const links = [{
+  const links = [
+  {
     label: 'Home',
     href: '/'
-  }, {
+  }, 
+  {
     label: 'Works',
     href: '/works/'
-  }, {
+  },
+  {
+    label: 'Music',
+    href: '/music/'
+  },
+  {
+    label: 'Videos',
+    href: '/videos/'
+  }, 
+  {
     label: 'About',
     href: '/about/'
   }, {
@@ -93,7 +104,7 @@ export default function App({ pathname, children }) {
             return (
               <NavbarItem className="hidden sm:flex" data-pathname={link.href} key={`${link.label}`} isActive={link.href === pathname}>
                 <Link color="foreground" href={link.href}>
-                  <ScrambleText text={link.label.toLocaleUpperCase()}/>
+                  <ScrambleText text={link.label.toLocaleUpperCase()} />
                 </Link>
               </NavbarItem>
             )

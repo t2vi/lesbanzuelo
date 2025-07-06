@@ -2,7 +2,7 @@
   "name": "DesignPhotographyPortfolio",
   "type": "module",
   "version": "0.0.1",
-	"description": "About Design/Photography Portfolio is a free Astro template for showcasing Design/Photography artists.",
+	"description": "Les Banzuelo's Design/Photography Portfolio built with Astro, React, HeroUI, and TailwindCSS.",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",

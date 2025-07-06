@@ -1,0 +1,11 @@
+---
+import { getCollection } from "astro:content";
+import Layout from '@layouts/Layout.astro';
+
+const videos = await getCollection("videos");
+
+---
+
+<Layout>
+	<!-- <WorksGrid works={works}/> -->
+</Layout>

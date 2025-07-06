@@ -23,7 +23,7 @@ const music = defineCollection({
 });
 
 const pages = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: "./src/data/pages" }),
+  loader: glob({ pattern: ['**/*.md','**/*.mdx'], base: "./src/data/pages" }),
   schema: z.object({
     title: z.string(),
     body: z.string().optional(),

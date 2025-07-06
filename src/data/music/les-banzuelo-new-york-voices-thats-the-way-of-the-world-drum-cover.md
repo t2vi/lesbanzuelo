@@ -6,6 +6,7 @@ embedCode: <iframe width="560" height="315"
   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
   clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+type: youtube
 ---
 "A Timeless Groove" is a journey through sound, where every beat tells a story. Here's another drum cover from the '90s—one of the beautiful grooves I’ve always loved. I hope you enjoy this performance as much as I did! Let me know what you think in the comments.
 

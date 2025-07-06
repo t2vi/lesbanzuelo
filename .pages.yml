@@ -51,6 +51,9 @@ content:
       - name: title
         label: Title
         type: string
+      - name: project
+        label: Project
+        type: string
       - name: body
         label: Body
         type: rich-text

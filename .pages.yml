@@ -31,32 +31,6 @@ content:
         options:
           multiple:
             max: 10
-  - name: videos
-    label: Videos
-    path: src/data/videos
-    type: collection
-    filename: '{fields.title}.md'
-    view:
-      fields: [title, pubDate]
-    fields:
-      - name: published
-        label: Is Published
-        type: boolean
-        default: true
-      - name: pubDate
-        label: Publication Date
-        type: date
-        options:
-          format: MMM dd yyyy
-      - name: title
-        label: Title
-        type: string
-      - name: body
-        label: Body
-        type: rich-text
-      - name: embedCode
-        label: Embed Code
-        type: string
   - name: music
     label: Music
     path: src/data/music
@@ -83,6 +57,11 @@ content:
       - name: embedCode
         label: Embed Code
         type: string
+      - name: type
+        label: Type
+        type: select
+        options:
+          values: [ youtube, spotify, soundcloud, bandcamp ]
   - name: pages
     label: Pages
     path: src/data/pages

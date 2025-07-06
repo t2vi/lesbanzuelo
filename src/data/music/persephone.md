@@ -8,4 +8,5 @@ embedCode: <iframe style="border-radius:12px"
   clipboard-write; encrypted-media; fullscreen; picture-in-picture"
   loading="lazy"></iframe>
 releaseType: Album
+type: spotify
 ---

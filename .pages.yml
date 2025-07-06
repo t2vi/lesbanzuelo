@@ -22,6 +22,9 @@ content:
       - name: body
         label: Body
         type: rich-text
+      - name: client
+        label: Client
+        type: string
       - name: heroImage
         label: Hero Image
         type: image

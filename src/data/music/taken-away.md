@@ -15,5 +15,6 @@ embedCode: '<iframe width="100%" height="300" scrolling="no" frameborder="no"
   href="https://soundcloud.com/user-819176786/timelight-panorama-taken-away-official"
   title="TIMELIGHT PANORAMA - Taken Away" target="_blank" style="color: #cccccc;
   text-decoration: none;">TIMELIGHT PANORAMA - Taken Away</a></div>'
+releaseType: Single
 type: soundcloud
 ---

@@ -2,7 +2,7 @@
 published: true
 title: Home
 ---
-/
+# Welcome, this is Les!
 
 Lester Banzuelo is a Filipino drummer, graphic artist, and multimedia professional whose creative pursuits span both music and visual design.  
 

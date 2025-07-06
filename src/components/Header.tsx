@@ -37,7 +37,7 @@ export default function App({ pathname, children }) {
     href: '/about/'
   }, {
     label: 'Contact',
-    href: 'mailto:lesbanzuelo@gmail.com'
+    href: 'mailto:siteweb.les@gmail.com'
   }]
   return (
     <Navbar

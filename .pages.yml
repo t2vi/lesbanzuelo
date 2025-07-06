@@ -65,6 +65,11 @@ content:
       - name: embedCode
         label: Embed Code
         type: string
+      - name: releaseType
+        label: Type
+        type: select
+        options:
+          values: [ Album, Single, Cover ]
       - name: type
         label: Type
         type: select

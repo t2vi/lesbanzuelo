@@ -33,10 +33,6 @@ export default function App({ pathname, children }) {
     href: '/music/'
   },
   {
-    label: 'Videos',
-    href: '/videos/'
-  }, 
-  {
     label: 'About',
     href: '/about/'
   }, {

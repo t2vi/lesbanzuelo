@@ -1,7 +1,7 @@
 ---
 published: true
 title: New York Voices - That's The Way Of The World (Drum Cover)
-project: les-banzuelo
+project: Les Banzuelo
 embedCode: <iframe width="100%" height="315"
   src="https://www.youtube.com/embed/TMZDE_6_IMw?si=a9lwDm-0unb5mOoM"
   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;

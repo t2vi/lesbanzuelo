@@ -1,11 +1,7 @@
 ---
 published: true
 title: Les Banzuelo - New York Voices - That's The Way Of The World (Drum Cover)
-embedCode: <iframe width="560" height="315"
-  src="https://www.youtube.com/embed/TMZDE_6_IMw?si=nptpN-TKD4VdZVmF"
-  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+embedCode: https://www.youtube.com/embed/TMZDE_6_IMw?si=nptpN-TKD4VdZVmF
 type: youtube
 ---
 "A Timeless Groove" is a journey through sound, where every beat tells a story. Here's another drum cover from the '90s—one of the beautiful grooves I’ve always loved. I hope you enjoy this performance as much as I did! Let me know what you think in the comments.

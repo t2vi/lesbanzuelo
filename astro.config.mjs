@@ -9,13 +9,15 @@ import svgr from 'vite-plugin-svgr';
 
 import sitemap from '@astrojs/sitemap';
 
+import mdx from '@astrojs/mdx';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://rabbitit.fun',
   devToolbar: {
     enabled: false
   },
-  integrations: [sitemap(), react()],
+  integrations: [sitemap(), react(), mdx()],
 
   vite: {
     plugins: [svgr(), tailwindcss()]

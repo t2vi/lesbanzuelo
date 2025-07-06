@@ -2,7 +2,7 @@
   "name": "DesignPhotographyPortfolio",
   "type": "module",
   "version": "0.0.1",
-	"description": "Les Banzuelo's Design/Photography Portfolio built with Astro, React, HeroUI, and TailwindCSS.",
+  "description": "Les Banzuelo's Design/Photography Portfolio built with Astro, React, HeroUI, and TailwindCSS.",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -11,17 +11,18 @@
     "compress-images": "node scripts/compress-images.js",
     "auto-deploy-website": "npm run build && python scripts/auto-deploy-website.py"
   },
-	"keywords": [
-		"astro",
-		"react",
-		"heroui",
-		"tailwindcss"
-	],
-	"author": {
-		"name": "banzueloles",
-		"email": "siteweb.les@gmail.com"
-	},
+  "keywords": [
+    "astro",
+    "react",
+    "heroui",
+    "tailwindcss"
+  ],
+  "author": {
+    "name": "banzueloles",
+    "email": "siteweb.les@gmail.com"
+  },
   "dependencies": {
+    "@astrojs/mdx": "^4.3.0",
     "@astrojs/react": "^4.3.0",
     "@astrojs/sitemap": "^3.4.1",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",

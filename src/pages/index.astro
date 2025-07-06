@@ -1,12 +1,11 @@
 ---
 import Layout from '@layouts/Layout.astro';
 // import MemberGrid from '@components/AllImageGrid.tsx'
-import { getCollection, render } from "astro:content";
+import { getEntry, render } from "astro:content";
 
-const pages = await getCollection("pages");
-const indexPage = pages.filter(({ data }) => data.title === "Home")[0];
+const about = await getEntry("pages", "home");
 
-const { Content } = await render(indexPage);
+const { Content } = await render(about);
 ---
 <Layout>
   <h1 class="text-xl md:text-3xl mb-8">

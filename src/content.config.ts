@@ -23,7 +23,7 @@ const music = defineCollection({
 });
 
 const pages = defineCollection({
-  loader: glob({ pattern: ['**/*.md','**/*.mdx'], base: "./src/data/pages" }),
+  loader: glob({ pattern: '**/*.mdx', base: "./src/data/pages" }),
   schema: z.object({
     title: z.string(),
     body: z.string().optional(),
@@ -31,4 +31,4 @@ const pages = defineCollection({
 });
  
 // Export all collections
-export const collections = {works, pages, music};
+export const collections = { works, pages, music };

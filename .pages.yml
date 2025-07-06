@@ -69,7 +69,7 @@ content:
         label: Type
         type: select
         options:
-          values: [ music, video ]
+          values: [ spotify, youtube, soudncloud, bandcamp ]
   - name: pages
     label: Pages
     path: src/data/pages

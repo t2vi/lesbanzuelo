@@ -79,7 +79,7 @@ content:
     label: Pages
     path: src/data/pages
     type: collection
-    filename: '{fields.title}.md'
+    filename: '{fields.title}.mdx'
     view:
       fields: [heroImage, title, pubDate]
     fields:

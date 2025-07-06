@@ -20,11 +20,13 @@ const soundcloud = sortedPosts.filter(({ data }) => data.type === "soundcloud");
 			{soundcloud.map((work) => 
 				<h3 class="mb-8 lg:mb-16 text-xl tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-2xl">{work.data.title} ~ {work.data.project}</h3>
 				<Fragment set:html={work.data.embedCode}></Fragment>
+				<br />
 			)}
 
 			{spotify.map((work) => 
 				<h3 class="mb-8 lg:mb-16 text-xl tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-2xl">{work.data.title} ~ {work.data.project}</h3>
 				<Fragment set:html={work.data.embedCode}></Fragment>
+				<br />
 			)}
 			<h2
 				class="mb-8 lg:mb-16 text-3xl tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl"
@@ -34,8 +36,9 @@ const soundcloud = sortedPosts.filter(({ data }) => data.type === "soundcloud");
 			{youtube.map((work) => 
 				<h3 class="mb-8 lg:mb-16 text-xl tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-2xl">{work.data.title} ~ {work.data.project}</h3>
 				<Fragment set:html={work.data.embedCode}></Fragment>
+				<br />
 			)}
-			<br />
+			
 			<h2
 				class="mb-8 lg:mb-16 text-3xl tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl"
 			>

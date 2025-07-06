@@ -37,7 +37,7 @@ content:
     type: collection
     filename: '{fields.title}.md'
     view:
-      fields: [title, pubDate]
+      fields: [title, project]
     fields:
       - name: published
         label: Is Published

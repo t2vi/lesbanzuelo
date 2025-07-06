@@ -58,7 +58,7 @@ content:
         label: Project
         type: select
         options:
-          values: [Les Banzuelo, Timelight Panorama, Fuseboxx]
+          values: [Les Banzuelo, Timelight Panorama, Fuseboxx, Persephone ]
       - name: body
         label: Body
         type: rich-text

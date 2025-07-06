@@ -3,8 +3,9 @@ import Layout from '@layouts/Layout.astro';
 // import MemberGrid from '@components/AllImageGrid.tsx'
 import { getCollection } from "astro:content";
 
+const pages = await getCollection("pages");
+const indexPage = pages.filter(({ data }) => data.title === "Home")[0];
 ---
 <Layout>
-  Short description here
-  <!-- <MemberGrid members={members} client:load /> -->
+  <Fragment set:html={indexPage.body}></Fragment>
 </Layout>

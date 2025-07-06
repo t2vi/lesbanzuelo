@@ -1,12 +1,11 @@
 ---
 import { getCollection } from "astro:content";
-import Layout from '@layouts/Layout.astro';
+import Layout from "@layouts/Layout.astro";
 import WorksGrid from "@components/WorksGrid.astro";
 
 const works = await getCollection("works");
-
 ---
 
 <Layout>
-	<WorksGrid works={works}/>
+	<WorksGrid works={works} />
 </Layout>

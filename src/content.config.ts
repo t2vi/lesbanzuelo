@@ -11,21 +11,14 @@ const works = defineCollection({
   }),
 });
 
-const videos = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: "./src/data/videos" }),
-  schema: z.object({
-    title: z.string(),
-    embedCode: z.string(),
-    body: z.string().optional(),
-  }),
-});
-
 const music = defineCollection({
   loader: glob({ pattern: '**/*.md', base: "./src/data/music" }),
   schema: z.object({
     title: z.string(),
     embedCode: z.string(),
     body: z.string().optional(),
+    project: z.string(),
+    type: z.enum(['youtube', 'spotify', 'soundcloud', 'bandcamp']).optional(),
   }),
 });
 
@@ -38,4 +31,4 @@ const pages = defineCollection({
 });
  
 // Export all collections
-export const collections = {works, pages, videos, music};
+export const collections = {works, pages, music};

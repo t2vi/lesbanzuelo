@@ -2,7 +2,11 @@
 import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 
-const videos = await getCollection("music");
+const sortedPosts = await getCollection("music");
+
+const youtube = sortedPosts.filter(({ data }) => data.type === "youtube");
+const spotify = sortedPosts.filter(({ data }) => data.type === "spotify");
+const soundcloud = sortedPosts.filter(({ data }) => data.type === "soundcloud");
 ---
 
 <Layout>
@@ -11,7 +15,31 @@ const videos = await getCollection("music");
 			<h2
 				class="mb-8 lg:mb-16 text-3xl tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl"
 			>
-				My sponsors:
+				Music
+			</h2>
+			{soundcloud.map((work) => 
+				<h3 class="mb-8 lg:mb-16 text-xl tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-2xl">{work.data.title} ~ {work.data.project}</h3>
+				<Fragment set:html={work.data.embedCode}></Fragment>
+			)}
+
+			{spotify.map((work) => 
+				<h3 class="mb-8 lg:mb-16 text-xl tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-2xl">{work.data.title} ~ {work.data.project}</h3>
+				<Fragment set:html={work.data.embedCode}></Fragment>
+			)}
+			<h2
+				class="mb-8 lg:mb-16 text-3xl tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl"
+			>
+				Videos
+			</h2>
+			{youtube.map((work) => 
+				<h3 class="mb-8 lg:mb-16 text-xl tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-2xl">{work.data.title} ~ {work.data.project}</h3>
+				<Fragment set:html={work.data.embedCode}></Fragment>
+			)}
+			<br />
+			<h2
+				class="mb-8 lg:mb-16 text-3xl tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl"
+			>
+				My sponsors
 			</h2>
 			<div
 				class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400"

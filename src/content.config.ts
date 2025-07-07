@@ -7,6 +7,7 @@ const works = defineCollection({
     title: z.string(),
     body: z.string().optional(),
     heroImage: z.string(),
+    type: z.string(),
     attachments: z.array(z.string()).optional(),
   }),
 });

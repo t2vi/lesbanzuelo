@@ -8,9 +8,5 @@ const about = await getEntry("pages", "home");
 const { Content } = await render(about);
 ---
 <Layout>
-  <h1 class="text-xl md:text-3xl mb-8">
-    Hi, I'm Les and this is my portfolio.
-  </h1>
-  <!-- <Fragment set:html={indexPage.body}></Fragment> -->
    <Content />
 </Layout>

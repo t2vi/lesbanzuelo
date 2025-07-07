@@ -32,7 +32,7 @@ content:
         label: Type
         type: select
         options:
-          values: [ Web Banner, Book Cover, Album Cover, Poster, Wallpaper ]
+          values: [ Web Banner, Book Cover, Album Cover, Poster, Wallpaper, Digital Print ]
       - name: attachments
         label: Attachments
         type: image

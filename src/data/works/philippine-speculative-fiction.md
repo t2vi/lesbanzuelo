@@ -2,6 +2,7 @@
 published: true
 title: Philippine Speculative Fiction
 heroImage: public/images/ph-spec-fiction-08.webp
+type: Book Cover
 attachments:
   - public/images/ph-spec-fiction-05.webp
   - public/images/ph-spec-fiction-06.webp

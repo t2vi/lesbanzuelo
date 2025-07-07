@@ -1,7 +1,8 @@
 ---
 published: true
-title: Alien digital print
+title: Alien
 heroImage: public/images/alien-digital-print.webp
+type: Digital Print
 attachments:
   - public/images/alien-digital-print.webp
 ---

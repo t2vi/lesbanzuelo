@@ -33,9 +33,6 @@ export default function App({ pathname, children }) {
     href: '/music/'
   },
   {
-    label: 'About',
-    href: '/about/'
-  }, {
     label: 'Contact',
     href: 'mailto:siteweb.les@gmail.com'
   }]

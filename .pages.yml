@@ -26,7 +26,7 @@ content:
         label: Client
         type: select
         options:
-          values: [ Timelight Panorama ]
+          values: [ Timelight Panorama, Kevler International ]
       - name: heroImage
         label: Hero Image
         type: image

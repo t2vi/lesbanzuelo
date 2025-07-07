@@ -21,7 +21,17 @@ const { work }: Props = Astro.props;
 const { Content } = await render(work);
 ---
 <Layout>
+  <section class="relative isolate overflow-hidden px-6 pt-12 pb-0 sm:pt-22 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:max-w-4xl">
+  <h2 class="text-center text-lg font-semibold text-gray-900">{work.data.title}</h2>
   <div class="w-full px-4">
     <Content/>
   </div>
+  
+  </div>
+  </section>
+  {work.data.attachments.map((attachment) => 
+    <img src={`${attachment}`} class="transition duration-300 ease-in-out hover:scale-108" />
+  )}
+ 
 </Layout>

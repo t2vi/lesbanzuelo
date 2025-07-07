@@ -1,6 +1,7 @@
 ---
 published: true
-title: "Spring Catalogue "
+title: Catalogue 2015
+client: Kevler International
 heroImage: public/images/K1.jpg
 type: Catalogue
 attachments:

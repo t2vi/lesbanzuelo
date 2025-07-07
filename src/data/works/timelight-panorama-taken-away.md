@@ -1,7 +1,9 @@
 ---
 published: true
 title: Timelight Panorama ~ Taken Away
+client: Timelight Panorama
 heroImage: public/images/timelight-panorama-taken-away.webp
+type: Album Cover
 attachments:
   - public/images/timelight-panorama-taken-away.webp
 ---

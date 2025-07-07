@@ -5,7 +5,7 @@ content:
     type: collection
     filename: '{fields.title}.md'
     view:
-      fields: [heroImage, title, client]
+      fields: [heroImage, title, type, client]
     fields:
       - name: published
         label: Is Published
@@ -28,6 +28,11 @@ content:
       - name: heroImage
         label: Hero Image
         type: image
+      - name: type
+        label: Type
+        type: select
+        options:
+          values: [ Web Banner, Book Cover, Album Cover, Poster, Wallpaper ]
       - name: attachments
         label: Attachments
         type: image

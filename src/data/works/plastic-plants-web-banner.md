@@ -1,7 +1,8 @@
 ---
 published: true
-title: Plastic plants Web Banner
+title: Plastic plants
 heroImage: public/images/plastic-plants-web-banner.webp
+type: Web Banner
 attachments:
   - public/images/plastic-plants-web-banner.webp
 ---

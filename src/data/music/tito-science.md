@@ -2,6 +2,7 @@
 published: true
 title: Tito Science
 project: Tito Science
+heroImage: public/images/ts.webp
 embedCode: <iframe style="border-radius:12px"
   src="https://open.spotify.com/embed/artist/4TwM7DpPI0RQJ9k5CMAfsa?utm_source=generator"
   width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay;

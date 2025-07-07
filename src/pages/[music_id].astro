@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import Layout from '@layouts/Layout.astro';
+import { render } from "astro:content";
+const allmusic = await getCollection("music");
+
+export const getStaticPaths = async () => {
+  const allmusic = await await getCollection("music");
+  const paths = allmusic.map((music) => {
+    return {
+      params: { music_id: music.id },
+      props: { music },
+    };
+  });
+
+  return paths;
+};
+
+const { music }: Props = Astro.props;
+const { Content } = await render(music);
+---
+<Layout>
+  <section class="relative isolate overflow-hidden px-6 pt-12 pb-0 sm:pt-22 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:max-w-4xl">
+  <h2 class="text-center text-lg font-semibold text-gray-900">{music.data.title} ~ {music.data.project}</h2>
+  <br/>
+  <Fragment set:html={music.data.embedCode}></Fragment>
+  <br/>
+  <div class="w-full px-4">
+    <Content/>
+  </div>
+  
+  </div>
+  </section>
+</Layout>

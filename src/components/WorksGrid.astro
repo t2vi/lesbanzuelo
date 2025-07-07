@@ -1,6 +1,5 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import Image from './Image.js';
 
 type Props = {
   works: CollectionEntry<"works">[];
@@ -19,14 +18,5 @@ const { works } = Astro.props;
     <span class="absolute top-2 right-2 items-center bg-black/40 backdrop-blur truncate px-2 py-1 text-xs font-medium text-white ring-1 ring-gray-500/10 ring-inset">{work.data.type}</span>
     <span class="block absolute overflow-hidden
       py-1 bottom-2 left-2 items-center bg-black/40 backdrop-blur truncate px-2 py-1 text-sm md:text-base font-medium text-white ring-1 ring-gray-500/10 ring-inset">{work.data.title}</span>
-    {/* <span class="
-      text-sm md:text-base text-white
-      block absolute overflow-hidden
-      py-1 bottom-0 px-2 z-10 w-full
-      bg-black/40 backdrop-blur truncate
-    ">
-      { work.data.title }
-    </span> */}
-   
   </a>)}
 </div>

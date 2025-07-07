@@ -24,7 +24,9 @@ content:
         type: rich-text
       - name: client
         label: Client
-        type: string
+        type: select
+        options:
+          values: [ Timelight Panorama ]
       - name: heroImage
         label: Hero Image
         type: image
